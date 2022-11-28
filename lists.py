@@ -93,3 +93,42 @@ for item in a:
 		b.append(item)
 
 print(f"List {b}")
+
+#11. Write a Python function that takes two lists and returns True if they have at least one common member.
+
+def takeList(li1, li2):
+
+	for item in li1:
+		if item in li2:
+			return True
+
+a = [1,2,3,4,5]
+b = [5,96,3,4,12]
+
+print(takeList(a,b))
+
+#12. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
+#Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+#Expected Output : ['Green', 'White', 'Black']
+
+a = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+
+a.pop(0)
+a.pop()
+a.pop()
+print(a)
+
+#14. Write a Python program to print the numbers of a specified list after removing even numbers from it.
+
+a = [1,2,3,4,5,6,7,8,9]
+
+for item in a:
+	if item % 2 == 0:
+		a.remove(item)
+
+print(f"The list after removing all the ven numbers are :: {a}")
+
+
+
+
+
