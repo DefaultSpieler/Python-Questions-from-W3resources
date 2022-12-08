@@ -9,7 +9,6 @@ for i in range(1500, 2701):
 #Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess 
 #is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.
 
-'''
 g_num = 7
 
 while True:
@@ -166,7 +165,7 @@ for i in range(1,dog_age + 1):
         a = a + 4
 
 print(f"Dog age in dog years is {dog_age} and that in human years is {a}")
-'''
+
 #Write a Python program to check whether an alphabet is a vowel or consonant. Go to the editor
 #Expected Output:
 
