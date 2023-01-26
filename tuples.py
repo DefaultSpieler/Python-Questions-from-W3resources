@@ -262,14 +262,6 @@ for i in a:
 
 print(b)
 
-#Write a Python program to create the colon of a tuple.
-
-#Write a Python program to unzip a list of tuples into individual lists.
-
-#Write a Python program to replace last value of tuples in a list.
-#Sample list: [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
-#Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
-
 #Write a Python program to remove an empty tuple(s) from a list of tuples.
 #Sample data: [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
 #Expected output: [('',), ('a', 'b'), ('a', 'b', 'c'), 'd']
@@ -285,3 +277,24 @@ print(a)
 #Write a Python program to sort a tuple by its float element.
 #Sample data: [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
 #Expected Output: [('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]
+
+a = [('item5', '12.20'), ('item2', '11.5'), ('item3', '15.10')]
+
+print(sorted(a, key = lambda x:x[1]))
+
+
+#Write a Python program to unzip a list of tuples into individual lists.
+
+a = [(1,2),(3,4),(5,6),(7,8)]
+
+b = [list(i) for i in a]
+
+print(b)
+
+#Write a Python program to replace last value of tuples in a list.
+#Sample list: [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+#Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
+
+a = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+print([i[:-1] + (100,) for i in a])
